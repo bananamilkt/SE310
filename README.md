@@ -4,6 +4,7 @@
 - Download models file from https://1drv.ms/u/s!AidBCfmtc0EDhtZiCroSVeDgESCegg?e=hZWT4m and put in SE310\src\main\webapp\WEB-INF\lib folder
 - Import as Dynamic Java web project in Eclipse Java EE
 - Run index.jsp on Tomcat Server
+- check out more detailed project information at /AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf
 
 ### Documentation
 #### Class Structure
@@ -34,3 +35,4 @@
 * Implemented general solution "Flows" to allow for web purchases
 * PayPal supported for web purchase
 * Geocoding auto-complete shipping address
+* check out more detailed project information at /AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf
