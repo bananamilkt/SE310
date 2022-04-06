@@ -50,10 +50,10 @@
 		out.print("<h5>Total Price:</h5>");
 		out.print("<input type=\"number\" class=\"priceDispaly\" id=\"amount\" value=\""+price+"\" readonly>");
 		out.print("<div id=\"paypal\"></div>");
-		out.print("</div>");
+
 	}
 %>
-
+	</div>
 </body>
 <script>
 const amountElement=document.getElementById("amount")
