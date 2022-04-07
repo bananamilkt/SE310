@@ -100,7 +100,8 @@
 !Factory Reset|factory,reset,reinstall,re-install|To perform a factory reset on your headset, please press and hold the volume(+) button and power button at the same time for 5 seconds when the headset is turned off. Afterwards, select the factory reset option from the menu and press confirm
 !Shipments|order,ship,delivery,arrive,package,track|To track your package, please log into your VR account. You can see your orders under the ORDERS tab. Deliveries typically take between 3-5 business days from ordering.
 !Refunds~Refund|refund,return,order,package|To process a refund, I will need to gather some information.
-!Store~Store|purchase,buy,store|To process a purchase, I will need to gather some information.
+!Store~Store|purchase,buy|To process a purchase, I will need to gather some information.
+!Where to buy the product|where,location,store,product,retailer|Here's the closest retailer location next to you.
 !How to contact us|contact,email,phone|Would you like our phone number or email address?
 	!|phone,number|Our contact number is 7702914533
 	!|email,email address|Our contact email is vrsupport@metaverse.ca

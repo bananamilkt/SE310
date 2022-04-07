@@ -99,7 +99,7 @@ public class Geocoding {
         address=address.substring(address.indexOf("formatted_address")+22);
         return address.substring(0,address.indexOf("\","));
     }
-    private static String getGeometryLat(String address){
+    public static String getGeometryLat(String address){
         if(address.indexOf("lat")!=-1){
             address=address.substring(address.indexOf("lat")+7);
             return address.substring(0,address.indexOf(","));
@@ -107,7 +107,7 @@ public class Geocoding {
             return " ";
         }
     }
-    private static String getGeometryIng(String address){
+    public static String getGeometryIng(String address){
         if(address.indexOf("lng")!=-1){
             address=address.substring(address.indexOf("lng")+7);
             return address.substring(0,address.indexOf("}"));

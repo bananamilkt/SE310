@@ -9,6 +9,14 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>INDEX</title>
+	<style>
+	#map{
+		height: 360px;
+		width: 360px;
+    	box-shadow: 0 5px 45px rgba(0,0,0,0.24);
+	}
+</style>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body onload="ToBottom()">
 	<div class="container">
@@ -63,6 +71,9 @@
 											  "</form>");
 											session.setAttribute("cart", conversations.get(i));
 										}
+										if(conversations.get(i).indexOf("Here's the closest retailer location next to you.")!=-1){
+											out.println("<div id=\"map\"></div>");
+										}
 									}else{
 										out.print("<p class=\"message user_message\">"+conversations.get(i)+"</p>");
 									}
@@ -95,8 +106,7 @@
 						//	out.print("<p class=\"message\">"+address.get(i)+"</p>");	
 						//}
 						//Testing Geocoding
-						
-					%>							
+					%>			
 			</div>
 		</div>
 		<div class="footer">
@@ -113,7 +123,55 @@
 	var chatbox=document.getElementById("chatbox");
 	chatbox.scrollTop=chatbox.scrollHeight;
 	}
-	
+</script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdNdUwN9Ef_rC43xshj-7qPEisUv37lns&callback=initMap&callback=initMap&libraries=places&v=weekly"
+      async
+    ></script>
+<script>   
+let map;
+let service;
+let infowindow;
+
+function initMap() {
+  const sydney = new google.maps.LatLng(-33.867, 151.195);
+
+  infowindow = new google.maps.InfoWindow();
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: sydney,
+    zoom: 15,
+  });
+
+  const request = {
+    query: "best buy",
+    fields: ["name", "geometry"],
+  };
+
+  service = new google.maps.places.PlacesService(map);
+  service.findPlaceFromQuery(request, (results, status) => {
+    if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+      for (let i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+      }
+
+      map.setCenter(results[0].geometry.location);
+    }
+  });
+}
+
+function createMarker(place) {
+  if (!place.geometry || !place.geometry.location) return;
+
+  const marker = new google.maps.Marker({
+    map,
+    position: place.geometry.location,
+  });
+
+  google.maps.event.addListener(marker, "click", () => {
+    infowindow.setContent(place.name || "");
+    infowindow.open(map);
+  });
+}
 </script>
 
 </html>
