@@ -34,5 +34,7 @@
 * new web based GUI
 * Implemented general solution "Flows" to allow for web purchases
 * PayPal supported for web purchase
-* Geocoding auto-complete shipping address
+* Auto-complete shipping address
+* Geocoding searching for shipping address
+* nearby electronic store/retailer searching and display by google map
 * check out more detailed project information at /AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf
