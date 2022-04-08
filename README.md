@@ -5,8 +5,8 @@
 - Run index.jsp on Tomcat Server
 
 ### Project Manual
-check out more detailed project information /AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf
-check out the project presentation video /AssignmentFolder/cosc310project_presentation.mp4
+- check out more detailed project information /AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf
+- check out the project presentation video /AssignmentFolder/cosc310project_presentation.mp4
 
 ### Project Structure
 * Chatbot
