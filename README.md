@@ -1,13 +1,14 @@
 ### How to run code
-#### Individual Project
 - Pull repository from commit ID: https://github.com/bananamilkt/SE310.git
 - Download models file from https://1drv.ms/u/s!AidBCfmtc0EDhtZiCroSVeDgESCegg?e=hZWT4m and put in SE310\src\main\webapp\WEB-INF\lib folder
 - Import as Dynamic Java web project in Eclipse Java EE
 - Run index.jsp on Tomcat Server
-- check out more detailed project information at /AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf
 
-### Documentation
-#### Class Structure
+### Project Manual
+check out more detailed project information /AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf
+check out the project presentation video /AssignmentFolder/cosc310project_presentation.mp4
+
+### Project Structure
 * Chatbot
     * Main method for the bot program. Once instance is created, this class handles the processing of the user input
 * GUI
@@ -30,7 +31,7 @@
     * using Google geocoding for location targeting
 * Testing
     * Unit tests
-#### New features
+### Updates
 * new web based GUI
 * Implemented general solution "Flows" to allow for web purchases
 * PayPal supported for web purchase
