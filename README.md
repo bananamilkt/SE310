@@ -31,11 +31,17 @@
     * using Google geocoding for location targeting
 * Testing
     * Unit tests
-### Updates
-* new web based GUI
-* Implemented general solution "Flows" to allow for web purchases
-* PayPal supported for web purchase
-* Auto-complete shipping address
-* Geocoding searching for shipping address
-* nearby electronic store/retailer searching and display by google map
-* check out more detailed project information at /AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf
+
+### Implemented APIs and UPDATEs
+- Google Geocoding API
+   * Geocoding searching for shipping address
+   * Auto-complete shipping address
+- Google Map JavaScript API
+   * nearby electronic store/retailer searching and display by google map
+- PayPal API
+   * supported for online purchase
+- Other updates         
+   * new web based GUI
+   * Implemented general solution "Flows" to allow for web purchases
+   *  Implemented response for nearby retailer searching
+
