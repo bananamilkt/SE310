@@ -13,6 +13,8 @@
 
 [![Languages](https://skillicons.dev/icons?i=java)](https://skillicons.dev)
 
+https://github.com/haoxiang-xu/WebChatBotNLP/assets/59581718/e3c9a2f7-d09e-471e-8bda-04e4d88557ed
+
 ### Project Manual
 - check out more detailed project information `/AssignmentFolder/IndivialProject-COSC310-HAOXIANG-XU.pdf`
 - check out the project presentation video `/AssignmentFolder/cosc310project_presentation.mp4`
